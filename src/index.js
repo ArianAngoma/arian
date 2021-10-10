@@ -3,8 +3,12 @@ import ReactDOM from 'react-dom';
 
 /* Importaciones propias */
 import {App} from './App';
+import {GlobalStyles} from './styles/GlobalStyles';
 
 ReactDOM.render(
-    <App/>,
+    <>
+        <GlobalStyles/>
+        <App/>
+    </>,
     document.getElementById('root')
 );
