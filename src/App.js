@@ -9,7 +9,7 @@ export const App = () => {
         <>
             <Router>
                 <NavMenu/>
-                <ScrollToTop/>
+                {/*<ScrollToTop/>*/}
                 <Switch>
                     <Route path="/about">
                         {/*<About/>*/}
