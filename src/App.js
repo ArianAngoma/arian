@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 /* Importaciones propias */
 import {NavMenu} from './components/ui/NavMenu';
 import {ScrollToTop} from './components/ui/ScrollToTop';
+import {Home} from './pages/Home';
 
 export const App = () => {
     return (
@@ -21,7 +22,7 @@ export const App = () => {
                         {/*<Projects/>*/}
                     </Route>
                     <Route path="/">
-                        {/*<Home/>*/}
+                        <Home/>
                     </Route>
                 </Switch>
                 {/*<Footer/>*/}
