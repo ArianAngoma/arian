@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 /* Importaciones propias */
-// import HeroImg from '../../assets/images/hero.gif';
 import HeroImg2 from '../../assets/images/hero2.gif';
 import SocialMediaArrow from '../../assets/images/social-media-arrow.svg';
 import ScrollDownArrow from '../../assets/images/scroll-down-arrow.svg';
@@ -187,7 +186,7 @@ export const HeroSection = () => {
                     <div className="hero__info">
                         <PText>
                             Profesional en el desarrollo de software e integración de sistemas, con experiencia como
-                            programador backend.
+                            programador en diferentes proyectos.
                         </PText>
                         <Button btnText="ver mis proyectos" btnLink="/projects"/>
                     </div>
