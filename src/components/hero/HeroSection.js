@@ -6,7 +6,7 @@ import HeroImg2 from '../../assets/images/hero2.gif';
 import SocialMediaArrow from '../../assets/images/social-media-arrow.svg';
 import ScrollDownArrow from '../../assets/images/scroll-down-arrow.svg';
 import {Button} from '../ui/Button';
-import {PText} from './PText';
+import {PText} from '../ui/PText';
 
 const HeroStyles = styled.div`
   .hero {
