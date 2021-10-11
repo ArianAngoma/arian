@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 /* Importaciones propias */
-import {Button} from '../ui/Button';
-import {PText} from '../ui/PText';
-import {SectionTitle} from '../ui/SectionTitle';
-import AboutImg from '../../assets/images/about-sec-img.jpg';
+import {Button} from '../../ui/Button';
+import {PText} from '../../ui/PText';
+import {SectionTitle} from '../../ui/SectionTitle';
+import AboutImg from '../../../assets/images/about-sec-img.jpg';
 
 const AboutSectionStyles = styled.div`
   padding: 10rem 0;
