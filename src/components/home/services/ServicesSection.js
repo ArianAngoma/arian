@@ -1,4 +1,4 @@
-import {MdDesktopMac, MdCode, MdPhonelinkSetup, MdImportantDevices} from 'react-icons/md';
+import {MdDesktopMac, MdCode, MdImportantDevices} from 'react-icons/md';
 import styled from 'styled-components';
 
 /* Importaciones propias */

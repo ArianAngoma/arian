@@ -1,4 +1,3 @@
-import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 
 /* Importaciones propias */
@@ -35,6 +34,17 @@ const ProjectItemStyles = styled.div`
     margin-top: 1rem;
   }
 
+  .projectItem__repo_desc {
+    font-size: 1.2rem;
+    font-family: 'RobotoMono Regular', serif;
+  }
+
+  .projectItem__repo {
+    font-size: 1.2rem;
+    font-family: 'RobotoMono Regular', serif;
+    color: lightskyblue;
+  }
+
   @media only screen and (max-width: 768px) {
     .projectItem__img {
       height: 350px;
@@ -42,17 +52,51 @@ const ProjectItemStyles = styled.div`
   }
 `;
 
-export const ProjectItem = ({img = ProjectImg, title = 'Project Name', desc = 'Desc'}) => {
+export const ProjectItem = ({
+                                img = ProjectImg,
+                                title = 'Project Name',
+                                desc = 'Desc',
+                                link = 'https://calendar-app-arianjs.herokuapp.com',
+                                repoFrontend,
+                                repoBackend
+                            }) => {
     return (
         <ProjectItemStyles>
-            <Link to="/projects" className="projectItem__img">
+            <a href={link} target="_blank" className="projectItem__img" rel="noreferrer">
                 <img src={img} alt="project img"/>
-            </Link>
+            </a>
             <div className="projectItem__info">
-                <Link to="#">
+                <a href={link} target="_blank" rel="noreferrer">
                     <h3 className="projectItem__title">{title}</h3>
-                </Link>
+                </a>
                 <p className="projectItem__desc">{desc}</p>
+                <br/>
+                <p className="projectItem__repo_desc">
+                    Repositorios: <span/>
+                    {
+                        (repoFrontend) && (
+                            <a href={repoFrontend}
+                               target="_blank"
+                               rel="noreferrer"
+                               className="projectItem__repo"
+                            >Frontend</a>
+                        )
+                    }
+
+                    {
+                        (repoBackend) && (
+                            <>
+                                <span> - </span>
+                                <a href={repoBackend}
+                                   target="_blank"
+                                   rel="noreferrer"
+                                   className="projectItem__repo"
+                                >Backend</a>
+                            </>
+                        )
+                    }
+                </p>
+
             </div>
         </ProjectItemStyles>
     )
