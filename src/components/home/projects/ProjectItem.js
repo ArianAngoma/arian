@@ -84,15 +84,18 @@ export const ProjectItem = ({
                     }
 
                     {
+                        (repoFrontend && repoBackend) && (
+                            <span> - </span>
+                        )
+                    }
+
+                    {
                         (repoBackend) && (
-                            <>
-                                <span> - </span>
-                                <a href={repoBackend}
-                                   target="_blank"
-                                   rel="noreferrer"
-                                   className="projectItem__repo"
-                                >Backend</a>
-                            </>
+                            <a href={repoBackend}
+                               target="_blank"
+                               rel="noreferrer"
+                               className="projectItem__repo"
+                            >Backend</a>
                         )
                     }
                 </p>
