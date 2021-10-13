@@ -118,8 +118,8 @@ export const TestimonialsSection = () => {
         <TestimonialSectionStyles>
             <div className="container">
                 <SectionTitle
-                    subheading="see what our clients say about us"
-                    heading="Testimonials"
+                    subheading="vea lo que mis clientes dicen de mí"
+                    heading="Testimonios"
                 />
                 <div className="testimonial__wrapper">
                     <SwitchTransition component={null}>
