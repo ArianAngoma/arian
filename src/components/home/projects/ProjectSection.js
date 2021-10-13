@@ -69,7 +69,7 @@ export const ProjectSection = () => {
     return (
         <ProjectSectionStyle>
             <div className="container">
-                <SectionTitle subheading="algunos de mis trabajos recientes" heading="Proyectos"/>
+                <SectionTitle subheading="Algunos de mis trabajos recientes" heading="Proyectos"/>
                 <div className="projects__allItems">
                     <Swiper
                         spaceBetween={30}
