@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 /* Importaciones propias */
 import {Button} from '../../ui/Button';
 import {PText} from '../../ui/PText';
