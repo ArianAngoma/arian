@@ -126,23 +126,19 @@ export const About = () => {
                     </div>
                     <div className="about__info__items">
                         <div className="about__info__item">
-                            <h1 className="about__info__heading">Education</h1>
+                            <h1 className="about__info__heading">Educación</h1>
 
                             <AboutInfoItem
-                                title="School"
-                                items={['Nasirabad Govt. High School, Chattogram']}
+                                title="Tecsup"
+                                items={['Instituto de Educación Superior en Perú']}
                             />
                             <AboutInfoItem
-                                title="Collage"
-                                items={['BAF Shaheen College Chattogram']}
-                            />
-                            <AboutInfoItem
-                                title="Varsity"
-                                items={['University Of Chitiagong']}
+                                title="Universidad"
+                                items={['Universidad Complutense de Madrid']}
                             />
                         </div>
                         <div className="about__info__item">
-                            <h1 className="about__info__heading">My Skills</h1>
+                            <h1 className="about__info__heading">Mis Habilidades</h1>
 
                             <AboutInfoItem
                                 title="FrontEnd"
@@ -150,27 +146,23 @@ export const About = () => {
                             />
                             <AboutInfoItem
                                 title="BackEnd"
-                                items={['Node', 'Express', 'PHP']}
+                                items={['NodeJs', 'ExpressJs', 'NestJs']}
                             />
                             <AboutInfoItem
-                                title="Design"
-                                items={['Photoshop', 'After Effects', 'Figma']}
+                                title="Tecnoloías"
+                                items={['TypeScript', 'Git', 'Github', 'AWS']}
                             />
                         </div>
                         <div className="about__info__item">
-                            <h1 className="about__info__heading">Experiences</h1>
+                            <h1 className="about__info__heading">Experiencias</h1>
 
                             <AboutInfoItem
-                                title="2010-2012"
-                                items={['junior developer at web Cifar']}
+                                title="Pucara Bull"
+                                items={['Desarrollador como Backend y Frontend']}
                             />
                             <AboutInfoItem
-                                title="2012-2016"
-                                items={['Front end developer at web Cifar ']}
-                            />
-                            <AboutInfoItem
-                                title="2016-"
-                                items={['Freelance web Developer']}
+                                title="Tukuy Club"
+                                items={['Desarrollador en el Departamento de TI']}
                             />
                         </div>
                     </div>
