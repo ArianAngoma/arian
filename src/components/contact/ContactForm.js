@@ -1,5 +1,9 @@
 import {useState} from 'react';
 import styled from 'styled-components';
+import Axios from 'axios';
+
+/* Importaciones propias */
+import {useForm} from '../../hooks/useForm';
 
 const FormStyle = styled.form`
   width: 100%;
@@ -45,13 +49,40 @@ const FormStyle = styled.form`
 `;
 
 export const ContactForm = () => {
-    const [name, setName] = useState('');
+    /*const [name, setName] = useState('');
     const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
+    const [message, setMessage] = useState('');*/
+
+    const [formValues, handleInputChange] = useForm({
+        name: '',
+        email: '',
+        message: ''
+    });
+    const {name, email, message} = formValues;
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        console.log('hola')
+
+        Axios.post('http://localhost:3030/api/email', formValues)
+            .then(res => {
+                if (res.data.success) {
+                    console.log(res.data);
+                } else {
+                    console.log(res.data);
+                }
+            })
+            .catch(err => {
+                console.log(err);
+
+
+            })
+    }
 
     return (
         <>
-            <FormStyle>
+            <FormStyle onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label htmlFor="name">
                         Su nombre
@@ -60,7 +91,7 @@ export const ContactForm = () => {
                             id="name"
                             name="name"
                             value={name}
-                            onChange={(e) => setName(e.target.value)}
+                            onChange={handleInputChange}
                         />
                     </label>
                 </div>
@@ -72,7 +103,7 @@ export const ContactForm = () => {
                             id="email"
                             name="email"
                             value={email}
-                            onChange={(e) => setEmail(e.target.value)}
+                            onChange={handleInputChange}
                         />
                     </label>
                 </div>
@@ -84,7 +115,7 @@ export const ContactForm = () => {
                             id="message"
                             name="message"
                             value={message}
-                            onChange={(e) => setMessage(e.target.value)}
+                            onChange={handleInputChange}
                         />
                     </label>
                 </div>
