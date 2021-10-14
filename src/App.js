@@ -5,6 +5,7 @@ import {NavMenu} from './components/ui/NavMenu';
 import {ScrollToTop} from './components/ui/ScrollToTop';
 import {Home} from './pages/Home';
 import {Footer} from './components/footer/Footer';
+import {About} from './pages/About';
 
 export const App = () => {
     return (
@@ -14,7 +15,7 @@ export const App = () => {
                 <ScrollToTop/>
                 <Switch>
                     <Route path="/about">
-                        {/*<About/>*/}
+                        <About/>
                     </Route>
                     <Route path="/contact">
                         {/*<Contact/>*/}

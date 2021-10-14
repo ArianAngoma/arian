@@ -22,7 +22,15 @@ const ButtonStyle = styled.div`
   }
 `;
 
-export const Button = ({btnText = 'test', btnLink = 'test', outline = false}) => {
+export const Button = ({btnText = 'test', btnLink = 'test', outline = false, download = false}) => {
+    if (download) return (
+        <ButtonStyle outline={outline} className="button-wrapper">
+            <Link className="button" to={btnLink} target="_blank" download>
+                {btnText}
+            </Link>
+        </ButtonStyle>
+    )
+
     return (
         <ButtonStyle outline={outline} className="button-wrapper">
             <Link className="button" to={btnLink}>
