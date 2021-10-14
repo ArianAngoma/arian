@@ -2,7 +2,7 @@ import {MdDesktopMac, MdCode, MdImportantDevices} from 'react-icons/md';
 import styled from 'styled-components';
 
 /* Importaciones propias */
-import {SectionTitle} from './SectionTitle';
+import {SectionTitle} from '../../ui/SectionTitle';
 import {ServicesSectionItem} from './ServicesSectionItem';
 
 const ServicesItemsStyles = styled.div`

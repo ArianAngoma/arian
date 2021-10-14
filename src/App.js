@@ -6,6 +6,7 @@ import {ScrollToTop} from './components/ui/ScrollToTop';
 import {Home} from './pages/Home';
 import {Footer} from './components/footer/Footer';
 import {About} from './pages/About';
+import {Projects} from './pages/Projects';
 
 export const App = () => {
     return (
@@ -18,7 +19,7 @@ export const App = () => {
                         <About/>
                     </Route>
                     <Route path="/projects">
-                        {/*<Projects/>*/}
+                        <Projects/>
                     </Route>
                     <Route path="/contact">
                         {/*<Contact/>*/}
