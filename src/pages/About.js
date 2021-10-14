@@ -83,5 +83,11 @@ const AboutPageStyles = styled.div`
 `;
 
 export const About = () => {
+    return (
+        <>
+            <AboutPageStyles>
 
+            </AboutPageStyles>
+        </>
+    )
 }
