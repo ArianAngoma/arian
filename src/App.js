@@ -7,6 +7,7 @@ import {Home} from './pages/Home';
 import {Footer} from './components/footer/Footer';
 import {About} from './pages/About';
 import {Projects} from './pages/Projects';
+import {Contact} from './pages/Contact';
 
 export const App = () => {
     return (
@@ -22,7 +23,7 @@ export const App = () => {
                         <Projects/>
                     </Route>
                     <Route path="/contact">
-                        {/*<Contact/>*/}
+                        <Contact/>
                     </Route>
                     <Route path="/">
                         <Home/>

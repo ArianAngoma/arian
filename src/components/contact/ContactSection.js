@@ -64,12 +64,11 @@ export const ContactSection = () => {
     return (
         <ContactSectionStyle>
             <div className="container">
-                <SectionTitle heading="contact" subheading="get in touch"/>
+                <SectionTitle heading="contacto" subheading="Ponte en contacto"/>
                 <div className="contactSection__wrapper">
                     <div className="left">
-                        <ContactInfoItem icon={<MdLocalPhone/>} text="+8801231"/>
-                        <ContactInfoItem icon={<MdEmail/>} text="webcifar@gmail.com"/>
-                        <ContactInfoItem text="Chittagong, Bangladesh"/>
+                        <ContactInfoItem icon={<MdLocalPhone/>} text="+51983416698"/>
+                        <ContactInfoItem icon={<MdEmail/>} text="arian.angoma@tecsup.edu.pe"/>
                     </div>
                     <div className="right">
                         <ContactForm/>
