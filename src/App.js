@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import {NavMenu} from './components/ui/NavMenu';
 import {ScrollToTop} from './components/ui/ScrollToTop';
 import {Home} from './pages/Home';
+import {Footer} from './components/footer/Footer';
 
 export const App = () => {
     return (
@@ -25,7 +26,7 @@ export const App = () => {
                         <Home/>
                     </Route>
                 </Switch>
-                {/*<Footer/>*/}
+                <Footer/>
             </Router>
         </>
     )

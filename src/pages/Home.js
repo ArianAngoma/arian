@@ -4,7 +4,7 @@ import {AboutSection} from '../components/home/about/AboutSection';
 import {ServicesSection} from '../components/home/services/ServicesSection';
 import {ProjectSection} from '../components/home/projects/ProjectSection';
 // import {TestimonialsSection} from '../components/home/testimonials/TestimonialsSection';
-import {ContactBanner} from '../components/home/footer/ContactBanner';
+import {ContactBanner} from '../components/home/banner/ContactBanner';
 
 export const Home = () => {
     return (
