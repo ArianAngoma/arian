@@ -1,4 +1,3 @@
-import {useState} from 'react';
 import styled from 'styled-components';
 import Axios from 'axios';
 
@@ -49,10 +48,6 @@ const FormStyle = styled.form`
 `;
 
 export const ContactForm = () => {
-    /*const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');*/
-
     const [formValues, handleInputChange] = useForm({
         name: '',
         email: '',
@@ -60,24 +55,16 @@ export const ContactForm = () => {
     });
     const {name, email, message} = formValues;
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
-        console.log('hola')
+        try {
+            const resp = await Axios.post('http://localhost:4000/api/email', formValues);
+            console.log(resp);
+        } catch (e) {
+            console.log(e);
+        }
 
-        Axios.post('http://localhost:3030/api/email', formValues)
-            .then(res => {
-                if (res.data.success) {
-                    console.log(res.data);
-                } else {
-                    console.log(res.data);
-                }
-            })
-            .catch(err => {
-                console.log(err);
-
-
-            })
     }
 
     return (
