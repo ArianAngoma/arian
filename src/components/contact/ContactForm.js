@@ -3,6 +3,7 @@ import Axios from 'axios';
 
 /* Importaciones propias */
 import {useForm} from '../../hooks/useForm';
+import {useState} from 'react';
 
 const FormStyle = styled.form`
   width: 100%;
@@ -48,7 +49,9 @@ const FormStyle = styled.form`
 `;
 
 export const ContactForm = () => {
-    const [formValues, handleInputChange] = useForm({
+    const [disabled, setDisabled] = useState(false);
+
+    const [formValues, handleInputChange, reset] = useForm({
         name: '',
         email: '',
         message: ''
@@ -57,14 +60,20 @@ export const ContactForm = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
+        setDisabled(true);
         try {
-            const resp = await Axios.post('http://localhost:4000/api/email', formValues);
-            console.log(resp);
+            await Axios.post(`${process.env.REACT_APP_API_URL}/email`, formValues);
+            // console.log(resp);
+            setDisabled(false);
+            reset({
+                name: '',
+                email: '',
+                message: ''
+            });
         } catch (e) {
             console.log(e);
+            setDisabled(false);
         }
-
     }
 
     return (
@@ -106,7 +115,7 @@ export const ContactForm = () => {
                         />
                     </label>
                 </div>
-                <button type="submit">Enviar</button>
+                <button disabled={disabled} type="submit">Enviar</button>
             </FormStyle>
         </>
     )
