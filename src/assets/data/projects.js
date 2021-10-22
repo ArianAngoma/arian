@@ -13,7 +13,7 @@ export const projects = [
         name: 'Portfolio ArianJs',
         desc: 'Mi portafolio, donde estaré subiendo los proyectos en los que colaboro y/o realizo. Desarrollada en ReactJs y NodeJs.',
         img: PortfolioArianJs,
-        link: 'https://arianjs.herokuapp.com/',
+        link: 'https://arianjs.netlify.app/',
         repoFrontend: 'https://github.com/ArianAngoma/arian',
         repoBackend: 'https://github.com/ArianAngoma/arian-api'
     },
