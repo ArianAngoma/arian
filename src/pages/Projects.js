@@ -97,6 +97,7 @@ export const Projects = () => {
                         {projectsData.map((item) => (
                             <ProjectItem
                                 key={item.id}
+                                link={item.link}
                                 title={item.name}
                                 desc={item.desc}
                                 img={item.img}
