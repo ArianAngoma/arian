@@ -149,7 +149,7 @@ export const About = () => {
                                 items={['NodeJs', 'ExpressJs', 'NestJs']}
                             />
                             <AboutInfoItem
-                                title="Tecnoloías"
+                                title="Tecnologías"
                                 items={['TypeScript', 'Git', 'Github', 'AWS']}
                             />
                         </div>
