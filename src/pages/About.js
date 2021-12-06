@@ -112,8 +112,9 @@ export const About = () => {
                                     miles de problemas a miles de personas.
                                     <br/>
                                     <br/>
-                                    Como desarrollador autodidacta, se podría decir que he destacado más en el ámbito
-                                    backend, trabajando en muchos proyectos privados y públicos, lo cual mejoró
+                                    Como desarrollador autodidacta, se podría decir que he destacado más como
+                                    programador Full Stack, trabajando en muchos proyectos privados y públicos, lo cual
+                                    mejoró
                                     enormemente mi experiencia y habilidades en general.
                                 </PText>
                             </div>

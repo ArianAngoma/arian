@@ -68,7 +68,7 @@ export const ContactSection = () => {
                 <div className="contactSection__wrapper">
                     <div className="left">
                         <ContactInfoItem icon={<MdLocalPhone/>} text="+51983416698"/>
-                        <ContactInfoItem icon={<MdEmail/>} text="arian.angoma@tecsup.edu.pe"/>
+                        <ContactInfoItem icon={<MdEmail/>} text="arian.angoma.js@gmail.com"/>
                     </div>
                     <div className="right">
                         <ContactForm/>
