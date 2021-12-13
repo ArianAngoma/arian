@@ -15,7 +15,7 @@ export const projects = [
         name: 'Calendar App',
         desc: 'Una aplicación web para agendar notas en un calendario por usuario. Desarrollada en ReactJs y NodeJs.',
         img: CalendarAppImg,
-        link: 'https://calendar-app-arianjs.herokuapp.com/',
+        link: 'https://calendar-app-arianjs.netlify.app/',
         repoFrontend: 'https://github.com/ArianAngoma/calendar-app-frontend-react',
         repoBackend: 'https://github.com/ArianAngoma/calendar-app-backend-node'
     },
