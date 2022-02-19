@@ -158,12 +158,16 @@ export const About = () => {
                             <h1 className="about__info__heading">Experiencias</h1>
 
                             <AboutInfoItem
+                                title="Equip"
+                                items={['Backend Developer']}
+                            />
+                            <AboutInfoItem
                                 title="Pucara Bull"
-                                items={['Desarrollador como Backend y Frontend']}
+                                items={['Full Stack Developer']}
                             />
                             <AboutInfoItem
                                 title="Tukuy Club"
-                                items={['Desarrollador en el Departamento de TI']}
+                                items={['Software Developer']}
                             />
                         </div>
                     </div>
