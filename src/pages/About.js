@@ -147,7 +147,7 @@ export const About = () => {
                             />
                             <AboutInfoItem
                                 title="BackEnd"
-                                items={['NodeJs', 'ExpressJs', 'NestJs']}
+                                items={['NodeJs', 'ExpressJs', 'NestJs', 'GraphQL']}
                             />
                             <AboutInfoItem
                                 title="Tecnologías"
