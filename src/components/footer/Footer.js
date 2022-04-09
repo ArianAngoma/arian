@@ -108,8 +108,8 @@ export const Footer = () => {
                                 path: 'tel:+51983416698',
                             },
                             {
-                                title: 'arian.angoma@tecsup.edu.pe',
-                                path: 'mailto:arian.angoma@tecsup.edu.pe',
+                                title: 'arian.angoma.js@gmail.com',
+                                path: 'mailto:arian.angoma.js@gmail.com',
                             },
                             /*{
                                 title: 'Lima - Perú',
@@ -137,7 +137,7 @@ export const Footer = () => {
             <div className="copyright">
                 <div className="container">
                     <PText>
-                        © 2021 - Arian Angoma
+                        © 2022 - Arian Angoma
                     </PText>
                 </div>
             </div>

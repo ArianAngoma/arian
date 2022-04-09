@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import {MdEmail, MdLocalPhone} from 'react-icons/md';
 
 /* Importaciones propias */
-import {ContactForm} from './ContactForm';
 import {ContactInfoItem} from './ContactInfoItem';
 import {SectionTitle} from '../ui/SectionTitle';
 
@@ -68,11 +67,14 @@ export const ContactSection = () => {
                 <div className="contactSection__wrapper">
                     <div className="left">
                         <ContactInfoItem icon={<MdLocalPhone/>} text="+51983416698"/>
-                        <ContactInfoItem icon={<MdEmail/>} text="arian.angoma.js@gmail.com"/>
+                        {/*<ContactInfoItem icon={<MdEmail/>} text="arian.angoma.js@gmail.com"/>*/}
                     </div>
                     <div className="right">
-                        <ContactForm/>
+                        <ContactInfoItem icon={<MdEmail/>} text="arian.angoma.js@gmail.com"/>
                     </div>
+                    {/*<div className="right">
+                        <ContactForm/>
+                    </div>*/}
                 </div>
             </div>
         </ContactSectionStyle>
